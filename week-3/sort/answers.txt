@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Runs fast on sorted array O(n) and slow in reversed and random O(n²).
+
+sort2 uses: Merge Sort
+
+How do you know?: Runs fast in every case O(n log n).
+
+sort3 uses: Selection Sort
+
+How do you know?: Runs slow on reversed array O(n²).
