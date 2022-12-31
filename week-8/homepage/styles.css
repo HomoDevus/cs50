@@ -1,0 +1,111 @@
+.header {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 40px 60px;
+    position: relative;
+}
+
+.header a, .header a svg {
+    color: #cbcbcb;
+    fill: #cbcbcb;
+}
+
+.header a:hover, .header a:hover svg {
+    color: #fff;
+    fill: #fff;
+}
+
+.books-showcase, .quotes-showcase {
+    padding: 80px 60px;
+}
+
+.quotes-showcase {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.quotes-showcase p > span {
+    font-size: 16px;
+}
+
+.container-sm {
+    max-width: 720px;
+}
+
+.quotes-showcase hr {
+    margin: 20px 0;
+}
+
+.books-showcase .row {
+    gap: 40px 30px;
+    justify-content: center;
+}
+
+.books-showcase .card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.books-showcase .card > .cover-image {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    background-color: #f2f2f2;
+}
+
+.books-showcase .card-body {
+    flex: 0;
+}
+
+.back-icon {
+    position: absolute;
+    left: 40px;
+    top: calc(50% - 12px);
+    display: flex;
+}
+
+#light {
+    color: #cbcbcb;
+}
+
+#light.glow {
+    color: #fff;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 4px #fff, 1px 1px 20px #fff;
+}
+
+@media only screen and (max-width: 1200px) {
+    /*Tablets [601px -> 1200px]*/
+    .books-showcase, .quotes-showcase {
+            padding: 60px 40px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .back-icon {
+        left: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /*Big smartphones [426px -> 600px]*/
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /*Small smartphones [325px -> 425px]*/
+    .books-showcase, .quotes-showcase {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .quotes-showcase {
+        font-size: 1.125rem;
+    }
+}

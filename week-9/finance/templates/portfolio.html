@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Portfolio
+{% endblock %}
+
+{% block main %}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Sum</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for share in shares %}
+        <tr>
+            <td>{{ share["symbol"] }}</td>
+            <td>{{ share["name"] }}</td>
+            <td>{{ share["amount"] }}</td>
+            <td>{{ share["price"] }}</td>
+            <td>{{ share["sum"] }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>
+                Cash
+            </th>
+            <td>
+                {{ total }}
+            </td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
